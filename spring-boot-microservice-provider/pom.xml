@@ -6,34 +6,25 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.4.5</version>
-        <relativePath/>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.sxt</groupId>
-    <artifactId>springcloud-01</artifactId>
+    <artifactId>spring-boot-microservice-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springcloud-01</name>
-    <description>springcloud 练习</description>
-
-    <packaging>pom</packaging>
+    <name>spring-boot-microservice-provider</name>
+    <description>springboot服务提供者</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
-    <modules>
-        <module>spring-boot-common-01</module>
-        <module>spring-boot-microservice-provider</module>
-        <module>spring-boot-microservice-consumer</module>
-    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.sxt</groupId>
+            <artifactId>spring-boot-common-01</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

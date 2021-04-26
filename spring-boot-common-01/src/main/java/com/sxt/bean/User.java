@@ -1,6 +1,8 @@
 package com.sxt.bean;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
 
     /**学生id**/
     private int userid;
@@ -33,5 +35,14 @@ public class User {
 
     public void setUserage(int userage) {
         this.userage = userage;
+    }
+
+    public User(int userid, String username, int userage) {
+        this.userid = userid;
+        this.username = username;
+        this.userage = userage;
+    }
+
+    public User() {
     }
 }
